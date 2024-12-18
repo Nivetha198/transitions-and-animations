@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav-container {
+    width: 100%;
+    /* margin: auto; */
+    justify-content: space-between;
+
+    display: flex;
+}
+
+.nav {
+    display: flex
+}
+
+.nav-ul1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-ul1 a {
+    display: grid;
+    grid-template-columns: (9, 1fr);
+
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.drop-down-container1 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+
+
+}
+
+.dropdown-ul1 {
+
+
+    background-color: #f1f1f1;
+
+}
+
+
+.dropdown-ul1 a {
+    color: black;
+
+    text-decoration: none;
+    display: block;
+    float: none;
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.dropdown-ul1 li {
+    width: 15%;
+
+}
+
+.li2:hover .drop-down-container1 {
+    display: block;
+
+}
+
+li a:hover {
+    color: firebrick
+}
+
+
+.slideshow-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.myslides img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: fade 9s ease-in-out infinite alternate;
+}
+@keyframes fade{
+    0%{opacity: 1;}
+    33%{opacity: 0;}
+    70%{opacity: 0;}
+    100%{opacity: 1;}
+}
+img :nth-of-type(1){
+    animation-delay: 0s;
+}
+img :nth-of-type(2){
+    animation-delay: 3s;
+}
+img :nth-of-type(3){
+    animation-delay: 6s;
+}
